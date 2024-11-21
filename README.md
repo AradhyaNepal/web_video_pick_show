@@ -2,7 +2,11 @@
 
 This package can be used to pick and view video in web.
 
-### Warning: Works only for Web
+### Warning: Works only for Web, and uses html.File a lot.
+
+### On other platform throws compile time error if this package is used,
+
+### will be solved in next releases.
 
 For picking this package uses image_picker_web internally, so for picking you can use on your own
 way.
@@ -35,6 +39,7 @@ very old flutter version installed.
     
     //Make sure to handle WebVideoPickShowException
      
+    _controller.dispose();//On dispose of StatefulWidget to avoid memory leaks
      
 ```
 
@@ -67,6 +72,14 @@ As you can see in the image, two red box are the picked items. You can manage th
  
 ```
 
+To check whether two files are equal I have added this extension on html.File:
+
+```
+   html.File file1;
+   html.File file2;
+   print("file1.uniqueValue()==file2.uniqueValue();
+```
+
 #### Playing the video
 
 ```
@@ -86,4 +99,21 @@ For detailed example please view examples, either
 from [Repository](https://github.com/AradhyaNepal/web_video_pick_show) or from pub.dev's example
 section.
 
+#### Error Handling
+
+And sorry for the Oppsie! error if you catch WebVideoPickShowException.
+
+```
+ try {
+     //Some action
+    } on WebVideoPickShowException catch (e, s) {
+      //Instead of e.toString() use:
+      e.withoutOppsie();
+      //Else your error message would be : "Oppsie! File not found!"
+    } catch (e, s) {
+      //Handle It
+    }
+ ```
+
+Its intentional bug ;-) because it reminds of one of my friend :-)
 

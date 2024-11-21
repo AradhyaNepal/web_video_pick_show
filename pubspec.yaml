@@ -1,32 +1,20 @@
 name: web_video_pick_show
 description: "Package to pick and show video in web. To pick it uses image_picker_web under the hook."
 
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+repository: https://github.com/AradhyaNepal/web_video_pick_show
+issue_tracker: https://github.com/AradhyaNepal/web_video_pick_show/issues
 
 
-version: 1.0.0+1
+version: 0.0.1
 
 environment:
-  sdk: '>=3.4.4 <4.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 
 dependencies:
+  image_picker_web: ^4.0.0
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.6
-  image_picker_web: ^4.0.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-
-  flutter_lints: ^3.0.0
-
-
-flutter:
-
-
-  uses-material-design: true
 
 

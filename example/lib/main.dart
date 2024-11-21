@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:example/show_custom_toast.dart';
 import 'package:flutter/material.dart';
-import 'package:web_video_pick_show/main.dart';
+import 'package:web_video_pick_show/web_video_pick_show.dart';
 
 void main() {
   runApp(const MyApp());
