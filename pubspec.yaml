@@ -1,5 +1,5 @@
 name: web_video_pick_show
-description: "A new Flutter project."
+description: "Package to pick and show video in web. To pick it uses image_picker_web under the hook."
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 

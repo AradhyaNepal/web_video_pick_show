@@ -23,7 +23,9 @@ class WebVideoPickerController extends ChangeNotifier {
     final c = _currentlyPlaying;
     if (c == null) return null;
     final video =
-        _data.where((e) => e.uniqueValue() == c.uniqueValue()).firstOrNull;
+        _data
+            .where((e) => e.uniqueValue() == c.uniqueValue())
+            .firstOrNull;
     return video;
   }
 
@@ -70,7 +72,7 @@ class WebVideoPickerController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void pickVideo() async {
+  Future<html.File?> pickVideo() async {
     try {
       final file = await ImagePickerWeb.getVideoAsFile();
       if (file == null) {
@@ -80,6 +82,7 @@ class WebVideoPickerController extends ChangeNotifier {
         );
       }
       add(file);
+      return file;
     } catch (e) {
       throw WebVideoPickShowException(
         e.toString(),
@@ -88,7 +91,7 @@ class WebVideoPickerController extends ChangeNotifier {
     }
   }
 
-  void pickMultipleVideo() async {
+  Future<List<html.File>?> pickMultipleVideo() async {
     try {
       final file = await ImagePickerWeb.getMultiVideosAsFile();
       if (file == null) {
@@ -98,6 +101,7 @@ class WebVideoPickerController extends ChangeNotifier {
         );
       }
       addMany(file);
+      return file;
     } catch (e) {
       throw WebVideoPickShowException(
         e.toString(),
