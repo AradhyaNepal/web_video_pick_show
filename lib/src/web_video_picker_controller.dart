@@ -84,6 +84,7 @@ class WebVideoPickerController extends ChangeNotifier {
       add(file);
       return file;
     } catch (e) {
+      if(e is WebVideoPickShowException)rethrow;
       throw WebVideoPickShowException(
         e.toString(),
         type: WebVideoPickShowExceptionType.unknown,
@@ -103,6 +104,7 @@ class WebVideoPickerController extends ChangeNotifier {
       addMany(file);
       return file;
     } catch (e) {
+      if(e is WebVideoPickShowException)rethrow;
       throw WebVideoPickShowException(
         e.toString(),
         type: WebVideoPickShowExceptionType.unknown,
