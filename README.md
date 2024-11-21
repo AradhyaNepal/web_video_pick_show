@@ -2,31 +2,13 @@
 
 This package can be used to pick and view video in web.
 
-### Warning: Works only for Web, and uses html.File a lot.
+## Warning:
 
-### On other platform throws compile time error if this package is used,
+Works only for Web, and uses html.File a lot.
+On other platform throws compile time error if this package is used,
+will be solved in next releases.
 
-### will be solved in next releases.
-
-For picking this package uses image_picker_web internally, so for picking you can use on your own
-way.
-
-For showing, you can use EasyWebVideoShowWidget() if you have picked from this package.
-If you have picked on your own way, you can use CustomWebVideoShowWidget().
-
-I recommend you seeing the repository instead of the code, so that you can customize on your own
-way.
-Also because this package is on beta phase and I don't got enough time for dedication on this
-package,
-yet you can send pull request and issues are appreciated, I will try my best to work on them.
-[Repository](https://github.com/AradhyaNepal/web_video_pick_show)
-
-You can also see example from the above repository, there is alternative_ways.dart for guys who have
-very old flutter version installed.
-
-### Usage
-
-#### To Pick:
+## To Pick:
 
 ```
    final _controller = WebVideoPickerController();
@@ -43,7 +25,7 @@ very old flutter version installed.
      
 ```
 
-#### To show picked items for user to play one out of all:
+## To show picked items for user to play one out of all:
 
 ```
 ListenableBuilder(
@@ -80,7 +62,7 @@ To check whether two files are equal I have added this extension on html.File:
    print("file1.uniqueValue()==file2.uniqueValue();
 ```
 
-#### Playing the video
+## Playing the video
 
 ```
   EasyWebVideoShowWidget(
@@ -95,7 +77,7 @@ To check whether two files are equal I have added this extension on html.File:
   ),
  ```
 
-#### Error Handling
+## Error Handling
 
 And sorry for the Oppsie! error if you catch WebVideoPickShowException.
 
@@ -113,7 +95,7 @@ And sorry for the Oppsie! error if you catch WebVideoPickShowException.
 
 Its intentional bug ;-) because it reminds of one of my friend :-)
 
-#### -------------------------------------------------------
+## -------------------------------------------------------
 
 For detailed example please view examples, either
 from [Repository](https://github.com/AradhyaNepal/web_video_pick_show)
