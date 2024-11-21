@@ -51,7 +51,7 @@ ListenableBuilder(
  
 ```
 
-<img src="img.png" alt="Example" width="1359" height="731">
+<img src="img.png" alt="Example" width="1359" height="500">
 
 As you can see in the image, two red box are the picked items. You can manage them by:
 
