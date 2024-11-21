@@ -95,10 +95,6 @@ To check whether two files are equal I have added this extension on html.File:
   ),
  ```
 
-For detailed example please view examples, either
-from [Repository](https://github.com/AradhyaNepal/web_video_pick_show) or from pub.dev's example
-section.
-
 #### Error Handling
 
 And sorry for the Oppsie! error if you catch WebVideoPickShowException.
@@ -116,4 +112,14 @@ And sorry for the Oppsie! error if you catch WebVideoPickShowException.
  ```
 
 Its intentional bug ;-) because it reminds of one of my friend :-)
+
+#### -------------------------------------------------------
+
+For detailed example please view examples, either
+from [Repository](https://github.com/AradhyaNepal/web_video_pick_show)
+
+Also check for alternative way if you have old flutter
+version [AlternativeWay](https://github.com/AradhyaNepal/web_video_pick_show/blob/main/example/lib/alternative_ways.dart)
+Alternative way credit goes to : [CreditRepo](https://github.com/sawin0/video_player_web/)
+
 
