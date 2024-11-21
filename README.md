@@ -38,7 +38,8 @@ ListenableBuilder(
  
 ```
 
-<img src="img.png" alt="Example" width="1359" height="500">
+![Example](https://raw.githubusercontent.com/AradhyaNepal/web_video_pick_show/main/img.png)
+
 
 As you can see in the image, two red box are the picked items. You can manage them by:
 
