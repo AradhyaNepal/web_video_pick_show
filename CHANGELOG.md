@@ -1,3 +1,15 @@
+# 0.0.6
+- Documentation and Image
+- 
+- # 0.0.5
+- Documentation and Image
+
+# 0.0.4
+- Documentation and Image
+
+# 0.0.3
+- Documentation and Image
+
 # 0.0.2
 - Better documentation
 
